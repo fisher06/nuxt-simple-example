@@ -1,0 +1,52 @@
+{
+  "category": {
+    "clothing": "Vêtements",
+    "articles": "articles",
+    "gender": "Genre",
+    "category": "Catégories",
+    "Girl": "Fille",
+    "Boy": "Garçon",
+    "Mixed": "Mixte",
+    "Tops": "Tops",
+    "Bottoms": "Bottoms",
+    "Pull-Cardi": "Pull-Cardi",
+    "Accessoires": "Accessoires",
+    "Robe/Combi/Salopette": "Robe / Combi / Salopette",
+    "previousPage": "Page précente",
+    "nextPage": "Page suivante"
+  },
+  "product": {
+    "lastStock": "Dernières pièces en stock !",
+    "chooseSize": "choisir la taille",
+    "addToCart": "Ajouter au panier",
+    "freeOrdering": "0 € à la commande",
+    "noObligationToPurchase": "Sans obligation d'achat",
+    "alwaysFreeReturns": "Retours toujours gratuits",
+    "description": "Description",
+    "composition": "Composition",
+    "interview": "Entretien"
+  },
+  "search": {
+    "findAProduct": "Recherche un produit",
+    "enterYourEmail": "Entrez votre adresse email"
+  },
+  "filter": {
+    "filter": "Filtrer"
+  },
+  "footer": {
+    "gettingDressedIsChildsPlay": " S'habiller devient un jeu d'enfant",
+    "discoverUs": "Nous découvrir",
+    "ourUniverse": "Notre univers",
+    "lookingForInspiration": "En quête d'inspiration ? Nos stylistes vous envoient juste ce qu’il faut chaque semaine.",
+    "youHaveQuestions": "Vous avez des questions ?",
+    "consultFAQ": "Consulter la FAQ",
+    "accessContactForm": "Accédez au formulaire de contact",
+    "callUsAt": "Téléphonez-nous au (+33) 01 60 27 17 56",
+    "cgv": "CGV",
+    "protectionPersonalData": "Protection des données personnelles",
+    "legalNotice": "Mentions légales"
+  },
+  "auth": {
+    "emailMustBeValid": "Mmh, il semblerait que cet email soit incorrect, on ressaye ?"
+  }
+}
