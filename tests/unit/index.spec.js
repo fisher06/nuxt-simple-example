@@ -22,5 +22,6 @@ describe('index.vue', () => {
     expect(wrapper.html()).toContain(`<app-category-breadcrumbs-stub></app-category-breadcrumbs-stub>`);
     expect(wrapper.html()).toContain(`<app-page-filters-stub></app-page-filters-stub>`);
     expect(wrapper.html()).toContain(`<app-products-stub></app-products-stub>`);
+    // todo test fetch fucntion
   })
 });

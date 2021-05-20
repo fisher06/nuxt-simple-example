@@ -26,4 +26,6 @@ describe('links.vue', () => {
   it("html page rendered", () => {
     expect(wrapper.html()).toContain(`<v-icon-stub>keyboard_arrow_right</v-icon-stub>`);
   })
+
+  // todo test regex 
 });

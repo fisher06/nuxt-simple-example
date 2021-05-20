@@ -3,7 +3,7 @@ import { mount, shallowMount, RouterLinkStub, createLocalVue } from '@vue/test-u
 import Vuex from "vuex"
 
 describe('filters.vue', () => {
-  const localVue = createLocalVue()
+  const localVue = createLocalVue();
   localVue.use(Vuex);
 
   const store = new Vuex.Store({
@@ -14,7 +14,7 @@ describe('filters.vue', () => {
     }
   });
 
-  store.dispatch = jest.fn()
+  store.dispatch = jest.fn();
 
   const wrapper = shallowMount(Filters, {
     mocks: {
@@ -56,7 +56,7 @@ describe('filters.vue', () => {
 
   it("watch event worked", () => {
     wrapper.vm.$options.watch.search.call(wrapper.vm, 'testjest');
-    expect(store.dispatch).toHaveBeenCalledWith('catalog/SET_SEARCH_DATA', 'testjest')
+    expect(store.dispatch).toHaveBeenCalledWith('catalog/SET_SEARCH_DATA', 'testjest');
   });
 
 });

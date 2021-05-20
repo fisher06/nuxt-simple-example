@@ -3,7 +3,7 @@ import { mount, shallowMount, RouterLinkStub, createLocalVue } from '@vue/test-u
 import Vuex from "vuex"
 
 describe('filterList.vue', () => {
-  const localVue = createLocalVue()
+  const localVue = createLocalVue();
   localVue.use(Vuex);
   const store = new Vuex.Store({
     state: {
@@ -15,6 +15,9 @@ describe('filterList.vue', () => {
       }
     }
   });
+
+  store.dispatch = jest.fn();
+
   const wrapper = shallowMount(FilterList, {
     mocks: {
       $t: () => {}
@@ -25,6 +28,7 @@ describe('filterList.vue', () => {
       NuxtLink: RouterLinkStub
     }
   });
+
   it('snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
@@ -37,4 +41,14 @@ describe('filterList.vue', () => {
     expect(wrapper.html()).toContain(`<v-col-stub cols=\"12\" tag=\"div\" class=\"filter-items pa-0 gender\">`);
   });
 
+  it("watch event worked", () => {
+    wrapper.vm.$options.watch.activatedFilters.handler.call(wrapper.vm, {
+      gender: ['Test'],
+      category: []
+    });
+    expect(store.dispatch).toHaveBeenCalledWith('catalog/SET_FILTER', {
+      gender: ['Test'],
+      category: []
+    });
+  });
 });
